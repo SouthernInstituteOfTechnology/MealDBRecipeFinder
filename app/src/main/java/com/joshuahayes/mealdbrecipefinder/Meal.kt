@@ -8,6 +8,11 @@ data class MealResponse(
     val meals: List<Meal>?
 )
 
+/* this is what will map the json
+to an actual class in Kotlin
+param:Json is the name that
+exists in the JSON data already
+and is important for the conversion */
 @JsonClass(generateAdapter = false)
 data class Meal(
     @param:Json(name = "idMeal")
